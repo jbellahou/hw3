@@ -29,6 +29,10 @@ while ($course = $courses->fetch_assoc()) {
     <td><?php echo $course['course_number']; ?></td>
     <td><?php echo $course['course_description']; ?></td>
     <td>
+<?php
+include "view-courses-editform.php";
+?>
+
     </td>
     <td>
       <form method="post" action="">
