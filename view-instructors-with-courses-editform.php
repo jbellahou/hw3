@@ -18,23 +18,23 @@
         <form method="post" action="">
           <div class="mb-3">
             <label for="iid<?php echo $course['section_id']; ?>" class="form-label">Instructor</label>
-            <input type="text" class="form-control" id="iid<?php echo $course['section_id']; ?>" name="iid">
+            <input type="text" class="form-control" id="iid<?php echo $course['section_id']; ?>" name="iid" value="<?php echo $course['instructor_id']; ?>">
           </div>
           <div class="mb-3">
             <label for="cid<?php echo $course['section_id']; ?>" class="form-label">Course</label>
-            <input type="text" class="form-control" id="cid<?php echo $course['section_id']; ?>" name="cid">
+            <input type="text" class="form-control" id="cid<?php echo $course['section_id']; ?>" name="cid" value="<?php echo $course['course_id']; ?>">
           </div>
           <div class="mb-3">
             <label for="sem<?php echo $course['section_id']; ?>" class="form-label">Semester</label>
-            <input type="text" class="form-control" id="sem<?php echo $course['section_id']; ?>" name="sem">
+            <input type="text" class="form-control" id="sem<?php echo $course['section_id']; ?>" name="sem" value="<?php echo $course['section_id']; ?>">
           </div>
           <div class="mb-3">
             <label for="room<?php echo $course['section_id']; ?>" class="form-label">Room</label>
-            <input type="text" class="form-control" id="room<?php echo $course['section_id']; ?>" name="room">
+            <input type="text" class="form-control" id="room<?php echo $course['section_id']; ?>" name="room" value="<?php echo $course['room']; ?>">
           </div>
           <div class="mb-3">
             <label for="daytime<?php echo $course['section_id']; ?>" class="form-label">Day/ time</label>
-            <input type="text" class="form-control" id="daytime<?php echo $course['section_id']; ?>" name="daytime">
+            <input type="text" class="form-control" id="daytime<?php echo $course['section_id']; ?>" name="daytime" value="<?php echo $course['daytime']; ?>">
           </div>
             <input type="hidden" name="sid" value="<?php echo $course['section_id']; ?>">
             <input type="hidden" name="actionType" value="Edit">
