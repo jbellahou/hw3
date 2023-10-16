@@ -22,7 +22,7 @@ if (isset($_POST['actionType'])) {
       }
       break;
     case "Delete":
-      if (deleteCourse($_POST['sid'])) {
+      if (deleteSection($_POST['sid'])) {
         echo '<div class="alert alert-success" role="alert">Section deleted.</div>';
       } else {
         echo '<div class="alert alert-danger" role="alert">Error.</div>';
