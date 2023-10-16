@@ -34,7 +34,7 @@
           </div>
           <div class="mb-3">
             <label for="daytime<?php echo $course['section_id']; ?>" class="form-label">Day/ time</label>
-            <input type="text" class="form-control" id="daytime<?php echo $course['section_id']; ?>" name="daytime" value="<?php echo $course['daytime']; ?>">
+            <input type="text" class="form-control" id="daytime<?php echo $course['section_id']; ?>" name="daytime" value="<?php echo $course['day_time']; ?>">
           </div>
             <input type="hidden" name="sid" value="<?php echo $course['section_id']; ?>">
             <input type="hidden" name="actionType" value="Edit">
