@@ -26,7 +26,7 @@
           </div>
           <div class="mb-3">
             <label for="sem<?php echo $course['section_id']; ?>" class="form-label">Semester</label>
-            <input type="text" class="form-control" id="sem<?php echo $course['section_id']; ?>" name="sem" value="<?php echo $course['section_id']; ?>">
+            <input type="text" class="form-control" id="sem<?php echo $course['section_id']; ?>" name="sem" value="<?php echo $course['semester']; ?>">
           </div>
           <div class="mb-3">
             <label for="room<?php echo $course['section_id']; ?>" class="form-label">Room</label>
