@@ -21,7 +21,7 @@
 <?php
 $instructorList = selectInstructorsForInput();
 $selectedInstructor = $course['instructor_id'];
-include "view-instructor-input-list.php";
+include "instructor-input-list.php";
 ?>
           </div>
           <div class="mb-3">
