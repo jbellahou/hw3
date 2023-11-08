@@ -1,9 +1,9 @@
 <?php
-require_once("util-db.php");
-require_once("model-instructors-with-courses.php");
+require_once("model/connection.php");
+require_once("model/instructors-with-courses-db.php");
 
 $pageTitle = "Instructors with Courses";
-include "view-header.php";
+include "view/header.php";
 
 if (isset($_POST['actionType'])) {
   switch ($_POST['actionType']) {
@@ -33,5 +33,5 @@ if (isset($_POST['actionType'])) {
 
 $instructors = selectInstructors();
 include "view/instructors-with-courses/page.php";
-include "view-footer.php";
+include "view/footer.php";
 ?>
