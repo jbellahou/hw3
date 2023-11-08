@@ -1,9 +1,9 @@
 <?php
-require_once("util-db.php");
-require_once("model-courses.php");
+require_once("model/connection.php");
+require_once("model/courses-db.php");
 
 $pageTitle = "Courses";
-include "view-header.php";
+include "view/header.php";
 
 if (isset($_POST['actionType'])) {
   switch ($_POST['actionType']) {
@@ -32,6 +32,6 @@ if (isset($_POST['actionType'])) {
 }
 
 $courses = selectCourses();
-include "view-courses.php";
-include "view-footer.php";
+include "view/courses/page.php";
+include "view/footer.php";
 ?>
