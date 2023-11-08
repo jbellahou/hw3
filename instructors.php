@@ -1,10 +1,10 @@
 <?php
-require_once("util-db.php");
-require_once("model-instructors.php");
+require_once("model/connection.php");
+require_once("model/instructors-db.php");
 
 $pageTitle = "Instructors";
-include "view-header.php";
+include "view/header.php";
 $instructors = selectInstructors();
-include "view-instructors.php";
-include "view-footer.php";
+include "view/instructors-db.php";
+include "view/footer.php";
 ?>
