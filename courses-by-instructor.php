@@ -1,10 +1,10 @@
 <?php
-require_once("util-db.php");
-require_once("model-courses-by-instructor.php");
+require_once("model/connection.php");
+require_once("model/courses-by-instructor-db.php");
 
 $pageTitle = "Courses by Instructor";
-include "view-header.php";
+include "view/header.php";
 $courses = selectCoursesByInstructor($_GET['id']);
-include "view-courses-by-instructor.php";
-include "view-footer.php";
+include "view/courses-by-instructor/page.php";
+include "view/footer.php";
 ?>
